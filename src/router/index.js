@@ -1,6 +1,6 @@
 import {createRouter, createWebHistory} from "vue-router";
 import Login from "../components/Login.vue";
-import Holders from "../components/Holders.vue";
+import Holders from "../views/Holders/Holders.vue";
 import Guard from "../services/middleware";
 
 const router = createRouter({
@@ -15,7 +15,7 @@ const router = createRouter({
             path: '/holders',
             name: 'Holders',
             component: Holders,
-            beforeEnter: Guard.auth,
+            // beforeEnter: Guard.auth,
         },
     ],
 });

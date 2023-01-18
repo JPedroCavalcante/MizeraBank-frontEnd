@@ -1,10 +1,10 @@
 <script setup>
 import Login from "./components/Login.vue";
-import Holders from "./components/Holders.vue";
+import Holders from "./views/Holders/Holders.vue";
 </script>
 
 <template>
-  <Login></Login>
+<!--  <Login></Login>-->
   <Holders></Holders>
 </template>
 
