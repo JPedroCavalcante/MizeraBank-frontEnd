@@ -4,7 +4,7 @@ import Cookie from "js-cookie";
 const token = Cookie.get('login-token');
 export default class HoldersService {
 
-    static async getAll(){
+    static async getAll() {
         return axios.get('/holders',
             {
                 headers: {
@@ -12,4 +12,16 @@ export default class HoldersService {
                 }
             });
     }
+
+    static async createHolder(params) {
+        return axios.post('/holders',
+            params,
+            {
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            });
+    }
+
+
 }

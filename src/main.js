@@ -1,14 +1,17 @@
-import { createApp } from "vue";
+import {createApp} from "vue";
 import App from "./App.vue";
 import router from "./router";
-import { URL_API } from "./configs/api";
-import axios from "axios";
+import "./configs/axios.js";
 import "./assets/main.css";
+import {createPinia} from 'pinia'
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 
-axios.defaults.baseURL = URL_API;
+const pinia = createPinia()
+pinia.use(piniaPluginPersistedstate)
+
 
 const app = createApp(App);
 
 app.use(router);
-
+app.use(pinia);
 app.mount("#app");

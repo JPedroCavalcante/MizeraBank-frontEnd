@@ -1,11 +1,7 @@
-<script setup>
-import Login from "./components/Login.vue";
-import Holders from "./views/Holders/Holders.vue";
-</script>
+<script setup></script>
 
 <template>
-<!--  <Login></Login>-->
-  <Holders></Holders>
+  <router-view></router-view>
 </template>
 
 <style scoped>
