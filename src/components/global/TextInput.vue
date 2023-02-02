@@ -9,7 +9,7 @@
         :type="inputType"
         v-model="inputComputed"
     />
-    <span v-if="error" class="text-red-500 ">
+    <span v-if="error" class="text-red-500">
     {{ error }}
   </span>
   </div>

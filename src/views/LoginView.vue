@@ -1,5 +1,5 @@
 <template>
-  <section class="">
+  <section class="place">
     <form @submit.stop.prevent="login()">
       <div class="mb-6 flex justify-between items-center">
         <h1 class=" text-lg text-black font-bold">
