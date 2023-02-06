@@ -1,5 +1,10 @@
 <template>
   <aside class="h-screen w-56 bg-green-800 flex flex-col">
+    
+    <img class="self-center" src="../../assets/simbolo_banco.png" width="100" height="100"/>
+    <h1 class="p-3 mb-2 rounded-md">
+      <b>Olá! Seja bem vindo ao portal administrativo Mz Bank</b>
+    </h1>
 
     <RouterLinkButton btn-text="Clientes"/>
     <RouterLinkButton btn-text="Contas"/>

@@ -1,7 +1,7 @@
 <template>
-  <section class="place">
+  <section class="h-screen p-6 flex justify-center items-center">
     <form @submit.stop.prevent="login()">
-      <div class="mb-6 flex justify-between items-center">
+      <div class="mb-6 ">
         <h1 class=" text-lg text-black font-bold">
           Login
         </h1>
@@ -35,7 +35,7 @@
       <div class="text-center lg:text-left">
         <button
             type="submit"
-            class="inline-block px-7 py-3 bg-green-300 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-green-400 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-800 active:shadow-lg transition duration-150 ease-in-out"
+            class="inline-block px-7 py-3 bg-green-800 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-green-400 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-800 active:shadow-lg transition duration-150 ease-in-out"
         >
           Logar
         </button>
@@ -55,10 +55,12 @@ export default {
   components: {TextInput},
 
   setup() {
+    
     const errors = ref([]);
     const email = ref('');
     const password = ref('');
     const userStore = useUserStore();
+
     const login = async () => {
       const params = {
         email: email.value,
@@ -85,7 +87,5 @@ export default {
 </script>
 
 <style scoped>
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 </style>

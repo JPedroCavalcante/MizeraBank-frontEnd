@@ -7,7 +7,7 @@
       w-auto
       text-center
       m-2
-      bg-green-600
+      bg-green-400
       text-black
       hover:text-white
 
